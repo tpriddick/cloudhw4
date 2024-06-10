@@ -13,7 +13,11 @@ for line in sys.stdin:
         count = int(count)
     except ValueError:
         continue
-    if bool(re.search('[a-zA-Z]',word)) == True:
+    true = 0
+    for i in word:
+        if bool(re.search('[a-zA-Z]',i)) == True:
+            true += 1
+    if len(word) == true:
         if current_word == word:
             current_count += count
         else:
