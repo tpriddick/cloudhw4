@@ -16,3 +16,5 @@ for line in sys.stdin:
                 true += 1
         if true == len(word):
             print('%s\t%s' % (word,1))
+        else:
+            print(None)
