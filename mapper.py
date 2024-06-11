@@ -17,4 +17,4 @@ for line in sys.stdin:
         if true == len(word):
             print('%s\t%s' % (word,1))
         else:
-            print(None)
+            print('%s\t$s' % (None,None))
