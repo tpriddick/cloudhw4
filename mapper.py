@@ -18,6 +18,3 @@ try:
                 print('%s\t%s' % (word,1))
             else:
                 print('%s\t%s' % (word,0))
-except Exception as e:
-    print(f"Error: {e}", file=sys.stderr)
-    sys.exit(1)
