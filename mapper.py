@@ -13,5 +13,5 @@ for line in sys.stdin:
     good = re.compile('[^a-zA-Z]')
     for word in words:
         word = word.lower()
-        word = good.compile('',word)
+        word = good.sub('',word)
         print('%s\t%s' % (word,1))
