@@ -10,7 +10,7 @@ import re
 for line in sys.stdin:
     line = line.strip()
     words = line.split()
-    good = re.compile('[a-zA-Z]')
+    good = re.compile('[^a-zA-Z]')
     for word in words:
         word = word.lower()
         word = good.compile('',word)
